@@ -28,3 +28,11 @@ $$x_{0} = x_{\text{нач}}, x_{1} = x_{0} + h, x_{2} = x_{1} + h, … x_{N} = x
 | 9)    | $${1,5} {\cos^4} {\frac {a+x} {{2a^2}+{2x^2}}}$$             | 10    | 1,5   | 1                  | 4                  |
 | 10)   | $$\frac {\sqrt{a+{\sin{x}}}} {\sqrt[3]{4+{\cos{x}}}}$$       | 15    | 2     | 0                  | 1                  |
 | 11)   | $$\frac {\ln{(x^4-a^2)}} {a^4+28}$$                          | 18    | 1,5   | 2                  | 3,5                |
+
+---
+
+__Используемые источники:__
+
+ * Документация KaTeX // [katex.org/docs/supported](https://katex.org/docs/supported) (Дата обращения: 2026-02-19);
+ * Онлайн редактор MarkDown (с поддержкой KaTeX) // [dillinger.io](https://dillinger.io/) (Дата обращения: 2026-02-19);
+ * Генератор MarkDown таблиц // [tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables) (Дата обращения: 2026-02-19);
