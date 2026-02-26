@@ -14,11 +14,13 @@
 /** Main function */
 int main() {
 
+	setlocale(LC_ALL, "C");
+
     printHeader();
     
     int choice;
 
-    cout << "Выберите лабораторную [9-11]: ";
+    cout << "Выберите лабораторную [9-17]: ";
     cin  >> choice;
 
     switch(choice) {
@@ -35,5 +37,6 @@ int main() {
             cout << "Лабораторная не найдена!" << endl;
     }
 
+	cout << "\n";
     return 0;
 }

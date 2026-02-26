@@ -16,6 +16,9 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <cmath>
+#include <iomanip>
+#include <locale>
 
 /** Utility headers */
 #include "utils/index.hpp"
