@@ -12,17 +12,39 @@ namespace lw10 {
 	 */
 	double computeFunction(int choice, double a, double x) {
 		switch (choice) {
-			case  1: return ( sqrt( x ) + sqrt( a ) + 1 ) / sqrt( x * a );
-			case  2: return ( sin( a * x ) + pow( sin( a ), 2 ) ) / ( 4 + pow( sin( x ), 2 ) );
-			case  3: return ( cbrt( a + x ) + cbrt( a + 2 ) ) / ( a + x );
-			case  4: return log( abs( 2 * a * x ) / abs( a-x ) );
-			case  5: return 1 / ( exp( a * x ) + 2 * exp( a ) );
-			case  6: return ( pow( sin( x ), 5 ) + a * x ) / ( x + pow( cos( x ), 5 ) );
-			case  7: return pow( ( a + 30 ) / ( a + sqrt( a * x ) ), 1.0 / 5.0 );
-			case  8: return log( a * a + x * x ) / abs( a + x );
-			case  9: return 1.5 * pow( cos( ( a + x ) / ( 2 * a * a + 2 * x * x ) ), 4 );
-			case 10: return sqrt( a + sin( x ) ) / cbrt( 4 + cos( x ) );
-			case 11: return log( pow( x,4 )-a * a ) / ( pow( a,4 ) + 28 );
+			case  1:
+				/* y = ( √x + √a + 1 ) / √(x·a) */
+				return ( sqrt( x ) + sqrt( a ) + 1 ) / sqrt( x * a );
+			case  2:
+				/* y = ( sin(a·x) + sin²(a) ) / ( 4 + sin²(x) ) */
+				return ( sin( a * x ) + pow( sin( a ), 2 ) ) / ( 4 + pow( sin( x ), 2 ) );
+			case  3:
+				/* y = ( ∛(a + x) + ∛(a + 2) ) / (a + x) */
+				return ( cbrt( a + x ) + cbrt( a + 2 ) ) / ( a + x );
+			case  4:
+				/* y = ln( |2·a·x| / |a − x| ) */
+				return log( abs( 2 * a * x ) / abs( a-x ) );
+			case  5:
+				/* y = 1 / ( e^(a·x) + 2e^a ) */
+				return 1 / ( exp( a * x ) + 2 * exp( a ) );
+			case  6:
+				/* y = ( sin⁵(x) + a·x ) / ( x + cos⁵(x) ) */
+				return ( pow( sin( x ), 5 ) + a * x ) / ( x + pow( cos( x ), 5 ) );
+			case  7:
+				/* y = ⁵√( (a + 30) / (a + √(a·x)) ) */
+				return pow( ( a + 30 ) / ( a + sqrt( a * x ) ), 1.0 / 5.0 );
+			case  8:
+				/* y = ln(a² + x²) / |a + x| */
+				return log( a * a + x * x ) / abs( a + x );
+			case  9:
+				/* y = 1.5 · cos⁴( (a + x) / (2a² + 2x²) ) */
+				return 1.5 * pow( cos( ( a + x ) / ( 2 * a * a + 2 * x * x ) ), 4 );
+			case 10:
+				/* y = √(a + sin(x)) / ∛(4 + cos(x)) */
+				return sqrt( a + sin( x ) ) / cbrt( 4 + cos( x ) );
+			case 11:
+				/* y = ln(x⁴ − a²) / (a⁴ + 28) */
+				return log( pow( x,4 )-a * a ) / ( pow( a,4 ) + 28 );
 			default:
 				cout << "Неверный номер функции.";
 				return 0;
