@@ -8,7 +8,6 @@
 
 #pragma once
 
-#include <iostream>
 #include "../index.hpp"
 
 namespace lw09 {

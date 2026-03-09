@@ -10,5 +10,6 @@
 
 // Function declarations only
 void printHeader();
+void waitForEnter();
 
 #endif // UTILS_HPP

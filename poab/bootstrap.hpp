@@ -19,6 +19,7 @@
 #include <cmath>
 #include <iomanip>
 #include <locale>
+#include <limits>
 
 /** Utility headers */
 #include "utils/index.hpp"

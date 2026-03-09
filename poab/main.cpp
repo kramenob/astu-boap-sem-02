@@ -18,10 +18,12 @@ int main() {
 
     printHeader();
     
-    int choice;
+    int choice = 0;
 
-    cout << "Выберите лабораторную [9-17]: ";
-    cin  >> choice;
+	while (choice < 9 || choice > 17) {
+		cout << "Выберите лабораторную [9-17]: ";
+		cin  >> choice;
+	}
 
     switch(choice) {
 
@@ -31,6 +33,10 @@ int main() {
 
         case 10:
             lw10::index();
+            break;
+
+        case 11:
+            lw11::index();
             break;
 
         default:
