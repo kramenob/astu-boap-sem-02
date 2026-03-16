@@ -202,14 +202,13 @@ namespace lw11 {
 			return result;
 		};
 		Fraction a{1,1}; // a1 = 1
-		Fraction one{1,1};
 		for (int i = 1; i < n; i++) {
 			a = divide(addOne(a), addOne(a));
 		}
 		cout << "Элемент a_" << n << " последовательности: " << endl;
 		printFraction(a);
 	}
-	
+
 
 
 	/**
