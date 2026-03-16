@@ -20,15 +20,19 @@
 #include <iomanip>
 #include <locale>
 #include <limits>
+#include <map>
+#include <functional>
 
 /** Utility headers */
 #include "utils/index.hpp"
 
 /** Works headers */
 #include "labs/index.hpp"
-// #include "selfs/index.hpp"
+#include "sels/index.hpp"
 
 /** Using namespace std */
 using namespace std;
+
+using Handler = function<void()>;
 
 #endif // BOOTSTRAP_HPP

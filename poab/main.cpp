@@ -14,35 +14,57 @@
 /** Main function */
 int main() {
 
-	setlocale(LC_ALL, "C");
+	setlocale(LC_ALL, "");
 
     printHeader();
+
+    map<int, Handler> labs = {
+        { 9, lw09::index},
+        {10, lw10::index},
+        {11, lw11::index},
+        // {12, lw12::index},
+        // {13, lw13::index},
+        // {14, lw14::index},
+        // {15, lw15::index},
+        // {16, lw16::index},
+        // {17, lw17::index}
+    };
+
+	map<int, Handler> sels = {
+		{ 5, sw05::index},
+		// { 6, sw06::index},
+		// { 7, sw07::index},
+		// { 8, sw08::index},
+		// { 9, sw09::index}
+	};
+
+	cout << "Доступные виды работ:" << endl
+		 << " 1. Лабораторная;"     << endl
+		 << " 2. Самостоятельная;"  << endl
+		                            << endl;
+
+	int mode = 0;
+	while (mode < 1 || mode > 2) {
+		cout << "Выберите вид работы [1-2]: ";
+		cin  >>  mode;
+		cout <<  endl;
+	}
+ 
+	auto& work = (mode == 1) ? labs : sels;
     
     int choice = 0;
-
-	while (choice < 9 || choice > 17) {
-		cout << "Выберите лабораторную [9-17]: ";
-		cin  >> choice;
+	while (work.find(choice) == work.end()) {
+		cout << "Выберите номер работы" << (mode == 1 ? " [9-17]" : " [5-9]") << ": ";
+		cin  >>  choice;
 	}
 
-    switch(choice) {
+    auto it = work.find(choice);
 
-        case 9:
-            lw09::index();
-            break;
+    if (it != work.end())
+        it->second();
+    else
+        cout << "Работа не найдена!" << endl;
 
-        case 10:
-            lw10::index();
-            break;
-
-        case 11:
-            lw11::index();
-            break;
-
-        default:
-            cout << "Лабораторная не найдена!" << endl;
-    }
-
-	cout << "\n";
+	cout << endl;
     return 0;
 }
