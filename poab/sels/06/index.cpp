@@ -1,11 +1,11 @@
 /**
  * @author Болотин Максим Владимирович
- * @brief  Самостоятельная работа 05
+ * @brief  Самостоятельная работа 06
  */
 
 #include "index.hpp"
 
-namespace sw05 {
+namespace sw06 {
 
 	/**
 	 * 

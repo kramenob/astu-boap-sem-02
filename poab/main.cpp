@@ -31,8 +31,7 @@ int main() {
     };
 
 	map<int, Handler> sels = {
-		{ 5, sw05::index},
-		// { 6, sw06::index},
+		{ 6, sw06::index},
 		// { 7, sw07::index},
 		// { 8, sw08::index},
 		// { 9, sw09::index}
@@ -54,7 +53,7 @@ int main() {
     
     int choice = 0;
 	while (work.find(choice) == work.end()) {
-		cout << "Выберите номер работы" << (mode == 1 ? " [9-17]" : " [5-9]") << ": ";
+		cout << "Выберите номер работы" << (mode == 1 ? " [9-17]" : " [6-9]") << ": ";
 		cin  >>  choice;
 	}
 

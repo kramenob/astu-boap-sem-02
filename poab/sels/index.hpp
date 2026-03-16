@@ -11,8 +11,7 @@
 #include "bootstrap.hpp"
 
 // Declare sels
-namespace sw05 { void index(); }
-// namespace sw06 { void index(); }
+namespace sw06 { void index(); }
 // namespace sw07 { void index(); }
 // namespace sw08 { void index(); }
 // namespace sw09 { void index(); }

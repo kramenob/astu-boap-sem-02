@@ -1,22 +1,22 @@
 /**
  * @author Болотин Максим Владимирович
- * @brief  Messages for Самостоятельная работа 05
+ * @brief  Messages for Самостоятельная работа 06
  */
 
 #include "index.hpp"
 
-namespace sw05 {
+namespace sw06 {
 
 	void message(const string& key) {
 		if (key == "intro") {
 			cout << R"(
-# Самостоятельная работа №05
+# Самостоятельная работа №06
 
 ## Задание:
 
 ...
 
-Человекочитаемый вид: https://github.com/kramenob/astu-boap-sem-02/blob/main/docs/sels/05/task-statement.md
+Человекочитаемый вид: https://github.com/kramenob/astu-boap-sem-02/blob/main/docs/sels/06/task-statement.md
 
 )";
 		} else if (key == "else") {
