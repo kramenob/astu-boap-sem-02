@@ -46,7 +46,6 @@ int main() {
 	while (mode < 1 || mode > 2) {
 		cout << "Выберите вид работы [1-2]: ";
 		cin  >>  mode;
-		cout <<  endl;
 	}
  
 	auto& work = (mode == 1) ? labs : sels;

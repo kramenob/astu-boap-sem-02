@@ -22,6 +22,9 @@
 #include <limits>
 #include <map>
 #include <functional>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 
 /** Utility headers */
 #include "utils/index.hpp"
