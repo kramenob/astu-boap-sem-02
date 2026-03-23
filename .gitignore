@@ -5,6 +5,11 @@
 # Breakpoints
 *.xcbkptlist
 
+# temp
+*.jpeg
+*.docx
+*.pdf
+
 # macOS
 .DS_Store
 
