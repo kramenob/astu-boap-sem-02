@@ -22,7 +22,7 @@ int main() {
         { 9, lw09::index},
         {10, lw10::index},
         {11, lw11::index},
-        // {12, lw12::index},
+        {12, lw12::index},
         // {13, lw13::index},
         // {14, lw14::index},
         // {15, lw15::index},
