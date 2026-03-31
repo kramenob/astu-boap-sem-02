@@ -68,9 +68,9 @@ namespace lw13 {
 	/**
 	 * Функция для вывода содержимого текстового файла
 	 */
-    static void Print_f(const char Name[]) {
+    static void Print_f(const char filename[]) {
 		// open file for reading
-        ifstream fif(Name);
+        ifstream fif(filename);
 
 		// handle missing file
         if (!fif) {
