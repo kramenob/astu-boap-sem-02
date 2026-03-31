@@ -19,8 +19,7 @@ R"(
 }
 
 void waitForEnter() {
-    cout << "Enter для продолжения...";
+    cout << endl << "Enter для продолжения...";
     cin.get();
-    cout << endl << endl;
 	return;
 }
