@@ -29,6 +29,7 @@
 #include <random>
 #include <sys/stat.h>
 #include <filesystem>
+#include <cctype>
 
 /** Utility headers */
 #include "utils/index.hpp"

@@ -24,7 +24,7 @@ int main() {
         {11, lw11::index},
         {12, lw12::index},
         {13, lw13::index},
-        // {14, lw14::index},
+        {14, lw14::index},
         // {15, lw15::index},
         // {16, lw16::index},
         // {17, lw17::index}
