@@ -30,6 +30,8 @@
 #include <sys/stat.h>
 #include <filesystem>
 #include <cctype>
+#include <codecvt>
+#include <cwctype>
 
 /** Utility headers */
 #include "utils/index.hpp"
