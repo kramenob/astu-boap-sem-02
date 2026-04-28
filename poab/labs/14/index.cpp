@@ -1,7 +1,7 @@
-/********************************************************************************
+/**
  * @author Болотин Максим Владимирович
  * @brief  Лабораторная работа 14
- ********************************************************************************/
+ */
 
 #include "index.hpp"
 
@@ -193,52 +193,6 @@ namespace lw14 {
 		waitForEnter();
 	}
 
-	/**
-	 * Task 6
-	 */
-	void task06(const string &line) {
-        message("task06");
-
-        // Variant processing: count lines, words and characters in Output.txt
-        ifstream in((appDir + "Output.txt").c_str());
-        if (!in.is_open()) {
-            cout << "Не удалось открыть Output.txt" << endl;
-            return;
-
-            waitForEnter();
-        }
-
-        size_t lines = 0;
-        size_t words = 0;
-        size_t chars = 0;
-
-        string temp;
-        while (getline(in, temp)) {
-            lines++;
-            chars += temp.size();
-
-            bool inWord = false;
-            for (char c : temp) {
-                if (isspace((unsigned char)c)) {
-                    if (inWord) {
-                        words++;
-                        inWord = false;
-                    }
-                } else {
-                    inWord = true;
-                }
-            }
-            if (inWord) words++;
-        }
-
-        cout << "Статистика Output.txt:"              << endl;
-        cout << "Строк: "                    << lines << endl;
-        cout << "Слов: "                     << words << endl;
-        cout << "Символов (без переносов): " << chars << endl;
-
-        waitForEnter();
-	}
-
     void index() {
 
 		// create directory if it doesn't exists
@@ -270,9 +224,6 @@ namespace lw14 {
 
         // Task 5
 		task05();
-
-        // Task 6
-		task06(line);
     }
 
 }
